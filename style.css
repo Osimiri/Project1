@@ -34,4 +34,20 @@ li {
     margin: 10px;
     cursor: pointer;
 }
-.survey li:hover
+
+ .option li:before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    margin-right:0.5em;
+    background-color: f2f2f2; 
+} 
+    
+
+
+#drippy {
+    height: 500px;
+    width: 500px;
+}

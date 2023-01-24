@@ -8,16 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>What Anime Character Are You?</h1>
+        <h1>What Anime Best Suits You?</h1>
         <p></p>
       </header>
-      <div class="card" >
-        <img src="https://img.wattpad.com/bea17080f84f7a16c33eeae19bdaa3429708cf3d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5137585932704a68474c686b78513d3d2d313031303539363934302e313635613039356639393330386233633732393334383031313731392e6a7067?s=fit&w=720&h=720" alt="Anime Character">
+      <div id="animeCard"class="card" >
+        <img id="drippy"src="https://img.wattpad.com/bea17080f84f7a16c33eeae19bdaa3429708cf3d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5137585932704a68474c686b78513d3d2d313031303539363934302e313635613039356639393330386233633732393334383031313731392e6a7067?s=fit&w=720&h=720" alt="Anime Character">
       </div>
       <div class ="survey"> 
         <form id="mainForm"> 
         <div class="q1">
-            <h3>If you're choosing entertainment to watch with your friends, what would it be?</h3>
+            <h3>1. What would you prefer watching with your friends?</h3>
             <ul class="option">
                 <li>
                     <input type="radio" id="option1" name="group1" value="action" class="inputs">
@@ -25,7 +25,7 @@
                 </li>
                 <li>
                     <input type="radio" id="option2" name="group1" value="sports" class="inputs">
-                    <label for="option2">Sports: ESPN/Superbowl</label>
+                    <label for="option2">Football</label>
                 </li>
                 <li>
                     <input type="radio" id="option3" name="group1" value="romance" class="inputs">
@@ -34,36 +34,325 @@
             </ul>                
         </div>
         <div class="q2">
-            <h3>If you're choosing entertainment to watch with your friends, what would it be?</h3>
+            <h3>2. It’s movie night! What would you go to see?</h3>
             <ul class="option">
                 <li>
                     <input type="radio" id="option1" name="group2" value="action" class="inputs">
-                    <label for="option1">Rush Hour</label>
+                    <label for="option1">300!</label>
                 </li>
                 <li>
                     <input type="radio" id="option2" name="group2" value="sports" class="inputs">
-                    <label for="option2">Sports: ESPN/Superbowl</label>
+                    <label for="option2">The Notebook </label>
                 </li>
                 <li>
                     <input type="radio" id="option3" name="group2" value="romance" class="inputs">
-                    <label for="option3">The Bachelor</label>
+                    <label for="option3">Blindside </label>
                 </li>
             </ul>                 
         </div>
         <div class="q3">
-            <h3>If you're choosing entertainment to watch with your friends, what would it be?</h3>
+            <h3>3. How do you handle conflict? </h3>
             <ul class="option">
                 <li>
                     <input type="radio" id="option1" name="group3" value="action" class="inputs">
-                    <label for="option1">Rush Hour</label>
+                    <label for="option1">Violence is the only answer </label>
                 </li>
                 <li>
-                    <input type="radio" id="option2" name="group3" value="sports" class="inputs">
-                    <label for="option2">Sports: ESPN/Superbowl</label>
+                    <input type="radio" id="option2" name="group3" value="romance" class="inputs">
+                    <label for="option2">Venting to my partner </label>
                 </li>
                 <li>
-                    <input type="radio" id="option3" name="group3" value="romance" class="inputs">
-                    <label for="option3">The Bachelor</label>
+                    <input type="radio" id="option3" name="group3" value="sports" class="inputs">
+                    <label for="option3">Let off steam on the court </label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q4">
+            <h3>4. What kind of student were you in school? </h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group4" value="action" class="inputs">
+                    <label for="option1">The kid who was always getting into fights </label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group4" value="romance" class="inputs">
+                    <label for="option2">Hallway couple kid </label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group4" value="sports" class="inputs">
+                    <label for="option3">The athlete </label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q5">
+            <h3>5. What kind of student were you in school? </h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group5" value="romance" class="inputs">
+                    <label for="option1">I usually just hang with my significant other  </label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group5" value="action" class="inputs">
+                    <label for="option2">Training to prepare for the next villain </label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group5" value="sports" class="inputs">
+                    <label for="option3">Working out in the gym </label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q6">
+            <h3>6. What type of vacation do you prefer?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group6" value="romance" class="inputs">
+                    <label for="option1">A getaway with a special someone</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group6" value="action" class="inputs">
+                    <label for="option2">An adventurous trip</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group6" value="sports" class="inputs">
+                    <label for="option3">A trip related to sports or competitions</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q7">
+            <h3>7.What type of music do you listen to?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group7" value="romance" class="inputs">
+                    <label for="option1">Slow, emotional songs</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group7" value="action" class="inputs">
+                    <label for="option2">Upbeat, energetic tracks</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group7" value="sports" class="inputs">
+                    <label for="option3">Pump-up songs or anthems</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q8">
+            <h3>8. What type of literature do you enjoy reading?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group8" value="romance" class="inputs">
+                    <label for="option1">Slow burn romance novels</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group8" value="action" class="inputs">
+                    <label for="option2">High suspense action novels</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group8" value="sports" class="inputs">
+                    <label for="option3">Self-Growth and building better habits books</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q9">
+            <h3>9. What type of TV shows do you like to watch?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group9" value="romance" class="inputs">
+                    <label for="option1">Dramas centered around relationships</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group9" value="action" class="inputs">
+                    <label for="option2">Shows with a fast-paced plot</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group9" value="sports" class="inputs">
+                    <label for="option3">Programs about sports analysis or highlights</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q10">
+            <h3>10. What new hobby sounds the most interesting to you?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group10" value="action" class="inputs">
+                    <label for="option1">Learning some sort of martial arts</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group10" value="sports" class="inputs">
+                    <label for="option2">Playing in an intramural sports tournament with friends</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group10" value="romance" class="inputs">
+                    <label for="option3">Taking a paint and sip class</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q11">
+            <h3>11. How do you prefer to relax?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group11" value="romance" class="inputs">
+                    <label for="option1">Spending time with loved ones, enjoying a movie night, candles lit</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group11" value="action" class="inputs">
+                    <label for="option2">Intentionally starting an argument with someone because its funny and you're toxic</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group11" value="sports" class="inputs">
+                    <label for="option3">Going to the gym to recenter and reflect on life</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q12">
+            <h3>12. Which video game would you prefer to play?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group12" value="sports" class="inputs">
+                    <label for="option1">Madden or Fifa</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group12" value="romance" class="inputs">
+                    <label for="option2">Doki Doki Literature club</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group12" value="action" class="inputs">
+                    <label for="option3">Call Of Duty and other FPS games</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q13">
+            <h3>13. What type of cuisine do you prefer?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group13" value="action" class="inputs">
+                    <label for="option1">Spicy or bold flavors</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group13" value="sports" class="inputs">
+                    <label for="option2">Foods commonly found at sports bars</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group13" value="romance" class="inputs">
+                    <label for="option3">Fine dining or meals with a romantic atmosphere</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q14">
+            <h3>14. What is your idea of a perfect day out?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group14" value="sports" class="inputs">
+                    <label for="option1">A day spent watching or playing sports</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group14" value="romance" class="inputs">
+                    <label for="option2">A romantic picnic or outing</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group14" value="action" class="inputs">
+                    <label for="option3">A day filled with exciting activities</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q15">
+            <h3>15. What is your favorite hobby?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group15" value="romance" class="inputs">
+                    <label for="option1">Photographing special moments</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group15" value="action" class="inputs">
+                    <label for="option2">Outdoor activities such as climbing or hiking</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group15" value="sports" class="inputs">
+                    <label for="option3">Participating or watching sports</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q16">
+            <h3>16. What would be your ideal first date?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group16" value="romance" class="inputs">
+                    <label for="option1">Private canoe ride on a calm lake</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group16" value="action" class="inputs">
+                    <label for="option2">Paintball tournament NO MERCY</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group16" value="sports" class="inputs">
+                    <label for="option3">Going to a major league baseball game</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q17">
+            <h3>17. How would your friends best describe you?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group17" value="action" class="inputs">
+                    <label for="option1">Someone who goes after what they want with no regard to how it affects others</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group17" value="romance" class="inputs">
+                    <label for="option2">Someone who often puts others first without thinking about yourself</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group17" value="sports" class="inputs">
+                    <label for="option3">Someone who enjoys working with others and is willing to make compromises for your friends</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q18">
+            <h3>18. Are you an extrovert, introvert, or ambivert?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group18" value="action" class="inputs">
+                    <label for="option1">Extrovert</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group18" value="romance" class="inputs">
+                    <label for="option2">Introvert</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group18" value="sports" class="inputs">
+                    <label for="option3">Ambivert</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q19">
+            <h3>19. What makes you happy?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group19" value="action" class="inputs">
+                    <label for="option1">Conquering tough challenges</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group19" value="sports" class="inputs">
+                    <label for="option2">Performing your absolute best</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group19" value="romance" class="inputs">
+                    <label for="option3">Spending time with those close to you</label>
+                </li>
+            </ul>                   
+        </div>
+        <div class="q20">
+            <h3>20. What are your goals?</h3>
+            <ul class="option">
+                <li>
+                    <input type="radio" id="option1" name="group20" value="romance" class="inputs">
+                    <label for="option1">To get into a relationship</label>
+                </li>
+                <li>
+                    <input type="radio" id="option2" name="group20" value="action" class="inputs">
+                    <label for="option2">Collect the dragonballs</label>
+                </li>
+                <li>
+                    <input type="radio" id="option3" name="group20" value="sports" class="inputs">
+                    <label for="option3">Become the best athlete I can be</label>
                 </li>
             </ul>                   
         </div>
@@ -73,7 +362,7 @@
   <script src="./index.js"></script>      
 </body>
 
-</html>
+</html>  
 
 
 
