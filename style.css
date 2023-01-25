@@ -7,6 +7,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border-bottom: 0.5rem solid; */
+}
+.anime-card{
+    height:1000
+    width: auto ;
+}
+
+.animeImg {
+    height: 700px;
+    width: 500px; 
 }
 
 * {
@@ -20,7 +30,7 @@ body {
     text-align: center;
     /* background: linear-gradient(45deg,purple, blue);
     height: 100vh; */
-    font-size: larger;
+    font-size:x-large;
     background-image: linear-gradient(45deg, rgb(20, 222, 124) 0%, rgb(20, 222, 124) 21%,rgb(25, 190, 119) 21%, rgb(25, 190, 119) 37%,rgb(30, 158, 113) 37%, rgb(30, 158, 113) 46%,rgb(35, 126, 108) 46%, rgb(35, 126, 108) 53%,rgb(39, 94, 103) 53%, rgb(39, 94, 103) 59%,rgb(44, 62, 97) 59%, rgb(44, 62, 97) 77%,rgb(49, 30, 92) 77%, rgb(49, 30, 92) 100%);
 }
 
@@ -40,11 +50,25 @@ li {
     /* text-align: center; */
 }
 
-#drippy {
+.secret {
     height: 500px;
     width: 500px;
 }
 
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    /* border-bottom: 2rem solid black; */
+  }
+/* Add borders to all the questions */
 .q1{
     border: 10px solid black;
 }
@@ -111,7 +135,7 @@ li {
 .q20{
     border: 10px solid black;
 }
-
+/* Add a hover effect to all the questions  */
 .q1:hover{
     background-color:lightblue
 }
@@ -184,3 +208,4 @@ input[type='submit']:hover{
 input[type='submit']{
     font-size: large;
 }
+

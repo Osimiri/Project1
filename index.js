@@ -1,9 +1,12 @@
+
+///// GLOBAL Genre variables //////////
 let test = document.querySelectorAll(".inputs")
 let form = document.querySelector("#mainForm")
 let action = 0
 let romance = 0
 let sports = 0
 
+/////SUBMIT FORM //////////
 form.addEventListener("submit", (e) => {
     e.preventDefault()
     
@@ -44,8 +47,8 @@ form.addEventListener("submit", (e) => {
     }
     console.log(result)
     
-    // let result = Object.keys(newObj).reduce((a, b) => newObj[a] > newObj[b] ? a : b);
-    // console.log(result)
+// let result = Object.keys(newObj).reduce((a, b) => newObj[a] > newObj[b] ? a : b);
+// console.log(result)
     fetch(`https://gogoanime.consumet.org/genre/${result}`)
         .then(response => response.json())
         .then(animeData => renderAnime(animeData));
@@ -63,8 +66,12 @@ survey.style = "display: none;";
     const img = document.querySelector("img");
     img.addEventListener("mouseover", mouseover);
     img.addEventListener("mouseout", mouseout);
-    
-
+    img.addEventListener("click",clickWaveCheck);
+    img.addEventListener("click",clickCloud1);
+    cloudTwo.addEventListener("click",clickCloud2);
+    cloudThree.addEventListener("click",clickCloud3);
+  
+// WAVE CHECK
     function mouseover() {
         img.src = "https://static.wikia.nocookie.net/05a086e0-d917-4d10-b3db-7e683be9c525/scale-to-width/370";
     }
@@ -73,6 +80,17 @@ survey.style = "display: none;";
         img.src = "https://img.wattpad.com/bea17080f84f7a16c33eeae19bdaa3429708cf3d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5137585932704a68474c686b78513d3d2d313031303539363934302e313635613039356639393330386233633732393334383031313731392e6a7067?s=fit&w=720&h=720";
     }
 
+  /////////////CLOUDS/////////
+const cloudOne = document.querySelector("#cloud1")  
+const cloudTwo = document.querySelector("#cloud2")  
+const cloudThree = document.querySelector("#cloud3")  
+  
+    
+    //////CHROLLO INSTRUCTORS////////
+// let eleanor = "https://cdn.discordapp.com/attachments/1065639379634237550/1067500381027962980/image.png" 
+// let tyler = "https://cdn.discordapp.com/attachments/1065639379634237550/1067499499523690536/image.png"
+// let gehrig = "https://cdn.discordapp.com/attachments/1065639379634237550/1067498704195567646/Untitled_Artwork.png"
+// let dripChrollo = "https://img.wattpad.com/bea17080f84f7a16c33eeae19bdaa3429708cf3d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f5137585932704a68474c686b78513d3d2d313031303539363934302e313635613039356639393330386233633732393334383031313731392e6a7067?s=fit&w=720&h=720"
 
 
 function renderAnime(animeData) {
@@ -93,6 +111,7 @@ function renderAnime(animeData) {
 
     const img = document.createElement("img");
     img.src = anime.animeImg;
+    img.class = "animeImg"
 
     const button = document.createElement("button");
     button.textContent = "more information";
@@ -113,5 +132,12 @@ function renderAnime(animeData) {
     div.appendChild(button);
 
     console.log(document.querySelector(".card"))
-    document.querySelector(".card").replaceWith(div);
+    ///don't need this anymore//document.querySelector(".card").replaceWith(div);
+
+    /////////function to replace the chrollo image and akatsuki clouds with the fetched content///////
+    function replaceDiv() {
+        document.querySelectorAll('.card').forEach((item) => {item.replaceWith(div);})
+      }
+    replaceDiv();
+
 }
