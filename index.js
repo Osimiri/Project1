@@ -97,10 +97,28 @@ cloudThree.addEventListener("click",clickCloud3);
   
     
     function clickCloud3(){
-        cloudThree.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067498704195567646/Untitled_Artwork.png"
+        cloudThree.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067858958674575451/Untitled_Artwork.png"
     }
 
-    
+// function clickCloud1() {
+//     cloudOne.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067500381027962980/image.png"
+//     cloudTwo.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067499499523690536/image.png"
+//     cloudThree.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067858958674575451/Untitled_Artwork.png"
+// }
+
+// function clickCloud2() {
+//     cloudOne.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067500381027962980/image.png"
+//     cloudTwo.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067499499523690536/image.png"
+//     cloudThree.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067858958674575451/Untitled_Artwork.png"
+// }
+
+
+// function clickCloud3(){
+//     cloudOne.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067500381027962980/image.png"
+//     cloudTwo.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067499499523690536/image.png"
+//     cloudThree.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067858958674575451/Untitled_Artwork.png"
+// }
+
     //////CHROLLO INSTRUCTORS////////
 // let eleanor = "https://cdn.discordapp.com/attachments/1065639379634237550/1067500381027962980/image.png" 
 // let tyler = "https://cdn.discordapp.com/attachments/1065639379634237550/1067499499523690536/image.png"
@@ -119,6 +137,7 @@ function renderAnime(animeData) {
     results.textContent = "We recommend the anime:";
 
     const animeName = document.createElement("h2");
+    animeName.className = "anime-name";
     animeName.textContent = anime.animeTitle;
 
     const releaseDate = document.createElement("h3");
