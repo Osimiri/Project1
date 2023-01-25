@@ -66,10 +66,8 @@ survey.style = "display: none;";
     const img = document.querySelector("img");
     img.addEventListener("mouseover", mouseover);
     img.addEventListener("mouseout", mouseout);
-    img.addEventListener("click",clickWaveCheck);
-    img.addEventListener("click",clickCloud1);
-    cloudTwo.addEventListener("click",clickCloud2);
-    cloudThree.addEventListener("click",clickCloud3);
+    // img.addEventListener("click",clickWaveCheck);
+
   
 // WAVE CHECK
     function mouseover() {
@@ -84,7 +82,24 @@ survey.style = "display: none;";
 const cloudOne = document.querySelector("#cloud1")  
 const cloudTwo = document.querySelector("#cloud2")  
 const cloudThree = document.querySelector("#cloud3")  
+
+cloudOne.addEventListener("click",clickCloud1);
+cloudTwo.addEventListener("click",clickCloud2);
+cloudThree.addEventListener("click",clickCloud3);
+
+    function clickCloud1() {
+        cloudOne.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067500381027962980/image.png"
+    }
+
+    function clickCloud2() {
+        cloudTwo.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067499499523690536/image.png"
+    }
   
+    
+    function clickCloud3(){
+        cloudThree.src = "https://cdn.discordapp.com/attachments/1065639379634237550/1067498704195567646/Untitled_Artwork.png"
+    }
+
     
     //////CHROLLO INSTRUCTORS////////
 // let eleanor = "https://cdn.discordapp.com/attachments/1065639379634237550/1067500381027962980/image.png" 
