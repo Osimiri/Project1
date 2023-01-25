@@ -2,9 +2,31 @@ header {
     text-align: center;
 }
 
-input[type="radio"]{
-    vertical-align: middle;
+.option {
+    text-align: middle;
 }
+
+input {
+    width: 12px;
+    margin-right: 1em;
+    flex-shrink: 0;
+  }
+
+  
+
+.option {
+    display:flex;
+    flex-direction: column;
+    align-items: baseline;
+    width:30%;
+    margin:0 auto;
+    /* border: 1px solid hotpink; */
+    text-align:left;
+    /* justify-content:space-around; */
+}
+
+
+div {}
 
 .card {
     display: flex;
@@ -13,14 +35,14 @@ input[type="radio"]{
     /* border-bottom: 0.5rem solid; */
 }
 .anime-card{
-    height:1000
-    width: auto ;
+    width: auto; 
+    height: 1000;
 }
 
 .animeImg {
-    height: 700px;
-    width: 500px; 
-}
+    min-width: 400px;
+    min-height: auto;
+  }
 
 * {
     margin: 0;
@@ -30,7 +52,7 @@ input[type="radio"]{
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+    text-align:center;
     /* background: linear-gradient(45deg,purple, blue);
     height: 100vh; */
     font-size:x-large;
@@ -203,21 +225,6 @@ li {
     background-color:lightblue
 }
 
-input[type='submit']:hover{
-    background-color: red;
-    font-size: larger;
-}
-
-input[type='submit']{
-    font-size: large;
-}
-
-
-
-
-
-
-
 
 
 
@@ -236,12 +243,15 @@ h1 {
   font-size: 3.3em;
   padding: 10px 0;
   font-weight: 800;
+  text-shadow: 10px 10px 3px black
 }
 
 p {
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 900;
   letter-spacing: 5px;
+  text-shadow: 5px 2px 3px black
+  
 }
 
 .header {
@@ -255,11 +265,11 @@ p {
 
 
 .btn-bgstroke {
-  font-size: 20px;
+  font-size: 30px;
   display: inline-block;
   border: 1px solid white;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   font-weight: 300;
   margin-top: 30px; 
@@ -269,3 +279,41 @@ p {
   background-color: white;
   color: #33cccc;
 }
+
+
+
+/* Submit Button CSS */
+.submit-button {
+	background: rgb(49, 30, 92) 77%;
+	color: white;
+	border-style: outset;
+	border-color: white;
+	height: 75px;
+	width: 125px;
+    font-weight: 300;
+    font-size: 25px;
+	font-family: 'Lato';
+	text-shadow: none;
+}
+
+.submit-button:hover{
+    background-color: rgb(25, 190, 119) 21%;
+    font-size: larger;
+}
+
+/* .submit-button{
+    font-size: large;
+} */
+
+.url-btn{
+    font-size: large;
+    background: rgb(49, 30, 92) 77%;
+    height: 75px;
+	width: 125px;
+    font-weight: 300;
+    font-size: 25px;
+	font-family: 'Lato';
+	text-shadow: none;
+    color: white
+}
+

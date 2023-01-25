@@ -144,8 +144,11 @@ function renderAnime(animeData) {
     releaseDate.textContent = `Release Date: ${anime.releasedDate}`;
 
     const img = document.createElement("img");
-    img.src = anime.animeImg;
-    img.class = "animeImg"
+    img.className = "animeImg"
+    img.src = anime.animeImg
+    // img.width = 460
+    // img.height = 650;
+    
 
     const button = document.createElement("button");
     button.textContent = "more information";
@@ -175,3 +178,5 @@ function renderAnime(animeData) {
     replaceDiv();
 
 }
+
+
