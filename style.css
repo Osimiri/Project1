@@ -2,6 +2,7 @@ header {
     text-align: center;
 }
 
+
 .card {
     display: flex;
     justify-content: center;
@@ -17,7 +18,10 @@ header {
 body {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    background-color:rgb(180, 149, 184)
+    /* background: linear-gradient(45deg,purple, blue);
+    height: 100vh; */
+    font-size: larger;
+    background-image: linear-gradient(45deg, rgb(20, 222, 124) 0%, rgb(20, 222, 124) 21%,rgb(25, 190, 119) 21%, rgb(25, 190, 119) 37%,rgb(30, 158, 113) 37%, rgb(30, 158, 113) 46%,rgb(35, 126, 108) 46%, rgb(35, 126, 108) 53%,rgb(39, 94, 103) 53%, rgb(39, 94, 103) 59%,rgb(44, 62, 97) 59%, rgb(44, 62, 97) 77%,rgb(49, 30, 92) 77%, rgb(49, 30, 92) 100%);
 }
 
 a {
@@ -33,21 +37,150 @@ li {
 .survey li {
     margin: 10px;
     cursor: pointer;
+    /* text-align: center; */
 }
-
- .option li:before {
-    content: '';
-    display: inline-block;
-    border-radius: 50%;
-    width: 1em;
-    height: 1em;
-    margin-right:0.5em;
-    background-color: f2f2f2; 
-} 
-    
-
 
 #drippy {
     height: 500px;
     width: 500px;
+}
+
+.q1{
+    border: 10px solid black;
+}
+
+.q2{
+    border: 10px solid black;
+}
+
+.q3{
+    border: 10px solid black;
+}
+
+.q4{
+    border: 10px solid black;
+}
+.q4{
+    border: 10px solid black;
+}
+.q5{
+    border: 10px solid black;
+}
+.q6{
+    border: 10px solid black;
+}
+.q7{
+    border: 10px solid black;
+}
+.q8{
+    border: 10px solid black;
+}
+.q9{
+    border: 10px solid black;
+}
+.q10{
+    border: 10px solid black;
+}
+.q11{
+    border: 10px solid black;
+}
+.q12{
+    border: 10px solid black;
+}
+.q13{
+    border: 10px solid black;
+}
+.q14{
+    border: 10px solid black;
+}
+.q15{
+    border: 10px solid black;
+}
+.q16{
+    border: 10px solid black;
+}
+.q17{
+    border: 10px solid black;
+}
+.q18{
+    border: 10px solid black;
+}
+.q19{
+    border: 10px solid black;
+}
+.q20{
+    border: 10px solid black;
+}
+
+.q1:hover{
+    background-color:lightblue
+}
+.q2:hover{
+    background-color:lightblue
+}
+.q3:hover{
+    background-color:lightblue
+}
+.q4:hover{
+    background-color:lightblue
+}
+.q5:hover{
+    background-color:lightblue
+}
+.q1:hover{
+    background-color:lightblue
+}
+.q6:hover{
+    background-color:lightblue
+}
+.q7:hover{
+    background-color:lightblue
+}
+.q8:hover{
+    background-color:lightblue
+}
+.q9:hover{
+    background-color:lightblue
+}
+.q10:hover{
+    background-color:lightblue
+}
+.q11:hover{
+    background-color:lightblue
+}
+.q12:hover{
+    background-color:lightblue
+}
+.q13:hover{
+    background-color:lightblue
+}
+.q14:hover{
+    background-color:lightblue
+}
+.q15:hover{
+    background-color:lightblue
+}
+.q16:hover{
+    background-color:lightblue
+}
+.q17:hover{
+    background-color:lightblue
+}
+.q18:hover{
+    background-color:lightblue
+}
+.q19:hover{
+    background-color:lightblue
+}
+.q20:hover{
+    background-color:lightblue
+}
+
+input[type='submit']:hover{
+    background-color: red;
+    font-size: larger;
+}
+
+input[type='submit']{
+    font-size: large;
 }

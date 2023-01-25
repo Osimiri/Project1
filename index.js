@@ -75,13 +75,6 @@ survey.style = "display: none;";
 
 
 
-
-
-
-
-
-
-
 function renderAnime(animeData) {
     let anime = animeData[Math.floor(Math.random() * animeData.length)];
     console.log(anime);// make div with image 
